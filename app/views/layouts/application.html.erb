@@ -23,6 +23,21 @@
   </head>
 
   <body>
-    <%= yield %>
-  </body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="<%= carros_path %>">Carros</a></li>
+        <li><a href="<%= inicio_path %>">Carros Inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <%= yield %> <%# Aquí se insertan las vistas específicas %>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Appsena</p>
+  </footer>
+</body>
 </html>

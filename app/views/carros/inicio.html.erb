@@ -1,0 +1,10 @@
+<h1>Página de Inicio de Carros</h1>
+<p>Bienvenido a la página de inicio de carros.</p>
+
+<% if @inicio %>
+  <h1>Detalles del Carro</h1>
+  <p>Marca: <%= @inicio.marca %></p>
+  <p>Modelo: <%= @inicio.modelo %></p>
+<% else %>
+  <p>No hay información disponible.</p>
+<% end %>
